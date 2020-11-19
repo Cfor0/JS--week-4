@@ -3,13 +3,12 @@ const red = document.getElementById("turnRed");
 const white = document.getElementById("turnWhite");
 
 window.updateTheBackground = function (className) {
-    
 
-    red.addEventListener('click', (className) => {
-        console.log(document.getElementById("body").classList.replace('bg-white', 'bg-red'))
+    red.addEventListener('click', () => {
+        document.getElementById("body").classList.replace('bg-white', 'bg-red')
     })
-    white.addEventListener('click', (className) => {
-        console.log(document.getElementById("body").classList.replace('bg-red', 'bg-white'))
+    white.addEventListener('click', () => {
+        document.getElementById("body").classList.replace('bg-red', 'bg-white')
     })
     
 }
